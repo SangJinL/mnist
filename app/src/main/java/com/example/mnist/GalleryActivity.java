@@ -45,6 +45,7 @@ public class GalleryActivity extends AppCompatActivity {
 
     private void getImageFromGallery() {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT).setType("image/*");
+
         startActivityForResult(intent, GALLERY_IMAGE_REQUEST_CODE);
     }
     @Override public void onActivityResult(int requestCode, int resultCode, Intent data) {
